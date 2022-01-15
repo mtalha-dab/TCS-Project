@@ -17,19 +17,7 @@ router.get('/',async function(req, res, next) {
     
 });
 
-router.post('/', function(req, res, next) {
-    const Aclass = req.body
-    Class.save({
-        "name":"Maths",
-        "teacher":"Talha",
-        "student" : "sulaiman"
-    }).exec(function(error, results) {
-        if (error) { 
-            return next(error);
-        }
-        // Respond with valid data
-        res.send("done");
-    });
+
 
 
     

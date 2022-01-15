@@ -14,9 +14,9 @@ connection.then((db) => {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use('/head', headRouter);
-app.use('/teacher', teacherRouter);
-app.use('/admin', adminRouter);
+app.use('/material', headRouter);
+app.use('/material', teacherRouter);
+app.use('/classes', adminRouter);
 
 
 app.listen(5000,()=>{
